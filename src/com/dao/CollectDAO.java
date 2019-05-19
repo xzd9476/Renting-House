@@ -44,6 +44,8 @@ public class CollectDAO {
 		return n;
 	}
 
+	
+	
 	public Collect findbyhouuser(String userid, String houseid) {
 		String sql="select * from collect where userid=? and houseid=?";
 		List<Collect> list= DBUtil.query(Collect.class, sql, userid,houseid);
